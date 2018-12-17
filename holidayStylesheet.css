@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/*CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*****************************************************CSS CODE BEGINS HERE*******************************************************************************/
+
+
+body{
+	width: 1315px;
+	height: 3070px;
+	margin: 0px;
+	background-color: #F4F4F4;
+}
+/**************************************************************************HEADER*/
+nav p{
+	display: inline;	
+}
+
+nav {
+	padding-top: 20px;
+	padding-right: 10px;
+}
+
+.text-center {
+	display: block;
+}
+.jumbotron {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+}
+.scroll {
+	margin: 20px;
+	padding-top: 90px;
+}
+#carouselBanner {
+	position: relative;
+}
+.col-md-12 {
+	display: inline;
+	width: auto;
+	height: 54px;
+	background-color: #b7b7b7;
+	padding-top: 12px;
+	font-family: BaskOldFace;
+	color: #08191c;
+	font-size: 22px;
+	font-weight: 400;
+	transform: matrix(1.055,0,0,1.005,0,0);
+}
+.navbarAd {
+	width: auto;
+	height: 31px;
+	background-color: #ab0906;
+	box-shadow: 0px 0px 3.96px 0.04px rgba(0, 0, 0, 0.4);
+}
+.navbarAd img{
+	width: auto;
+	height: 28px;
+	padding-top: 3px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+/************************************************************************Gallery***************************************/
+.card{
+    box-sizing: border-box;
+}
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    text-align: center;
+    background-color: #f1f1f1;
+    height: 205px;
+}
+
+/*body {
+	font-family: Arial, Helvetica, sans-serif;
+}*/
+
+/* Float four columns side by side */
+.column {
+	width: 33%;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+	margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+
+
+.row .col-lg-9 .row {
+    padding-bottom: 180px;
+}
+.col-lg-9 {
+	padding-top: 40px;
+	padding-left: 0px;
+}
+center .row.text-center .text-center {
+    font-size: 36px;
+    color: #740b08;
+}
+center .row.text-center h6 {
+    font-size: 18px;
+    color: #740b08;
+    margin-top: 20px;
+}
+
+#carouselBanner center .row.text-center {
+    position: absolute;
+    left: 0;
+    top: auto;
+    width: 100%;
+    text-align: center;
+    bottom: 600%;
+}
+.jumbotron #car {
+}
+#main #sidenav .col-lg-3.sidenav {
+    margin-right: 0px;
+}
+#sidenav .col-lg-3.sidenav img {
+    padding-left: inherit;
+}
+
+
+
+
+
+
+
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+}#main #sidenav {
+    font-family: BaskOldFace;
+    color: #606165;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+}
+
+#Header {
+    font-size: 29px;
+}
+
+/**************************************************Sidebar**********************************************/
+/* The sidebar menu */
+.col-lg {
+	margin-bottom: 25px;
+	padding-left: 0px;
+}
+.col-lg-3{
+  width: 10px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 40px;
+}
+.col-lg-3 a {
+  padding: 8px 8px 6px 6px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+/*************************************************Main********************************************/
+
+.column card{
+	padding: 0px 0px 0px 80px
+}
+/*************************************************Footer********************************************/
+
+
+
+
+
+
+
+
+
+
+
+footer .container{
+	display: inline;
+	
+}
+
+.carousel-inner {
+	margin: 0;
+	padding: 0;
+}
+#header {
+}
