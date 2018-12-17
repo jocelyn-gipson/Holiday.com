@@ -80,12 +80,45 @@ nav {
     padding: 0;
     height: 600px;
 }
-.scroll {
-	margin: 20px;
-	padding-top: 90px;
-}
 #carouselBanner {
 	position: relative;
+}
+#carouselBanner center .row.text-center {
+    position: absolute;
+    left: 0;
+    top: auto;
+    width: 100%;
+    text-align: center;
+    bottom: 650%;
+}
+center .row.text-center .text-center {
+    font-size: 70px;
+    color: #740b08;
+	padding-bottom: 0px;
+}
+center .row.text-center h6 {
+    font-size: 18px;
+    color: #740b08;
+    margin-top: 20px;
+}
+.scroll {
+	height: 100px;
+	width: 100px;
+	margin: 0px;
+	padding-top: 50px;
+}
+#carouselBanner center .row.text-center {
+}
+.scroll a img {
+    position: relative;
+    left: 600px;
+    right: auto;
+    top: 80px;
+}
+
+
+#grayBar {
+	width: 1280px;
 }
 .col-md-12 {
 	display: inline;
@@ -106,36 +139,28 @@ nav {
 	box-shadow: 0px 0px 3.96px 0.04px rgba(0, 0, 0, 0.4);
 }
 .navbarAd img{
-	width: auto;
-	height: 28px;
-	padding-top: 3px;
-	padding-left: 7px;
-	padding-right: 7px;
+    width: 1280px;
+    height: 28px;
+    padding-top: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
 /************************************************************************Gallery***************************************/
 .card{
     box-sizing: border-box;
 }
-/* Style the counter cards */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     background-color: #f1f1f1;
     height: 205px;
 }
-
-/*body {
-	font-family: Arial, Helvetica, sans-serif;
-}*/
-
 /* Float four columns side by side */
 .column {
 	width: 33%;
 	padding-right: 20px;
 	padding-left: 10px;
 }
-
-/* Remove extra left and right margins, due to padding in columns */
 .row {
 	margin: 0 -5px;
 }
@@ -146,8 +171,6 @@ nav {
   	display: table;
   	clear: both;
 }
-
-
 .row .col-lg-9 .row {
     padding-bottom: 180px;
 }
@@ -155,24 +178,7 @@ nav {
 	padding-top: 40px;
 	padding-left: 0px;
 }
-center .row.text-center .text-center {
-    font-size: 36px;
-    color: #740b08;
-}
-center .row.text-center h6 {
-    font-size: 18px;
-    color: #740b08;
-    margin-top: 20px;
-}
 
-#carouselBanner center .row.text-center {
-    position: absolute;
-    left: 0;
-    top: auto;
-    width: 100%;
-    text-align: center;
-    bottom: 600%;
-}
 .jumbotron #car {
 }
 #main #sidenav .col-lg-3.sidenav {
@@ -181,6 +187,18 @@ center .row.text-center h6 {
 #sidenav .col-lg-3.sidenav img {
     padding-left: inherit;
 }
+.row .col-lg-8.text-right p {
+    font-size: 24px;
+}
+.row .col-lg-8.text-right .tally {
+
+}
+.col-lg-3.sidenav .example input {
+    margin: 0px 0px 15px 0px;
+}
+
+
+
 
 
 
@@ -204,7 +222,7 @@ center .row.text-center h6 {
 
 }
 
-#Header {
+#Header, #Header1,#Header2,#Header3{
     font-size: 29px;
 }
 
@@ -229,6 +247,43 @@ center .row.text-center h6 {
   font-size: 18px;
   color: #818181;
   display: block;
+}
+input{
+  	box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /*************************************************Main********************************************/
@@ -257,5 +312,16 @@ footer .container{
 	margin: 0;
 	padding: 0;
 }
-#header {
+
+#cartTally {
+    font-size: 25px;
+}
+
+div {
+	
+}
+
+.tally {
+	display: inline;
+	
 }

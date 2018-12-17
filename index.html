@@ -6,6 +6,9 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--------------------------------------------------Font Awesome--------------------------------------------->
+	
+<!--------------------------------------------------My CSS--------------------------------------------->	
 <link href="holidayStylesheet.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -16,9 +19,9 @@
 		<div class="row">
 			<h1 class="col-lg-4"></h1>
 		  <nav class="col-lg-8 text-right">
-				<p>item one</p>
-				<p>item one</p>
-				<p>item one</p>
+				<p><img src="Images/accountIcon.png" alt=""></p>
+				<p><img src="Images/shoppingCart.png" alt=""></p>
+				<div class="tally"><p>(0)</p></div>
 			</nav>
 		</div>
 	</header>
@@ -26,16 +29,16 @@
 		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-				<img class="d-block w-100" src="/Images/holiday-table.png" alt="First slide">
+				<img class="d-block w-100" src="Images/holiday-table.png" width="1160px" height="440px" alt="First slide">
 				</div>
 				<div class="carousel-item">
-				<img class="d-block w-100" src="Images/whiteChristmas.png" alt="Second slide">
+				<img class="d-block w-100" src="Images/whiteChristmas.png"  width="1160px" height="440px" alt="Second slide">
 				</div>
 				<div class="carousel-item">
-				<img class="d-block w-100" src="Images/table.png" alt="Third slide">
+				<img class="d-block w-100" src="Images/table.png" width="1160px" height="440px" alt="Third slide">
 				</div>
 				<div class="carousel-item">
-				<img class="d-block w-100" src="Images/xchristmas-meal.png" alt="Fourth slide">
+				<img class="d-block w-100" src="Images/xchristmas-meal.png"  width="1160px" height="440px" alt="Fourth slide">
 				</div>
 			<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -48,12 +51,15 @@
 			</div>
 			
 			<div class="container" id="carouselBanner">
-			<center><div class="row text-center">
+			<center>
+			<div class="row text-center">
 				<h1 class="text-center">Merry, Merry, & More Merry</h1>
-				<div class="scroll"><a href="#"><img src="scroll_icon.png" alt="scroll down" width="60"></a></div>
-			</div></center>
+			<div class="scroll"><a href="#"><img src="Images/Icons/scroll_icon.png" alt="scroll down" width="60" class="img-fluid"></a></div>
+			</div>
+		</center>
 			</div>
 		</div>
+
 		
 	</section>
 	
@@ -74,9 +80,7 @@
 		<p class="col-md-1">Gifts from Us</p>
 	</nav>
 	</div>
-	<div class="navbarAd"><a href="freeShippingpage.html"></a> <img src="navBanner.png" alt="navbarBanner" class="img-fluid"></div>
-
-	
+	<div class="navbarAd"><a href="free3dayShipping.html"></a> <img src="Images/navBanner.png" alt="free3dayShipping"></div>
 	
 	
 	<main class="container-fluid scroll-container" id="main">
@@ -85,9 +89,16 @@
 
 	  <div class="row" id="sidenav">
 		<div class="col-lg-3 sidenav">
-			<img src="Rectangle_3.png" alt="search" width="250" class="rounded img-fluid">
 			
-			<div class="row">
+						<!-- --------Search ---------------------->
+			<form class="example" action="action_page.php">
+			  <input type="text" placeholder="Search.." name="search">
+				<i class="fa fa-search" aria-hidden="true"></i>
+			  <button type="submit"></button>
+	  	  </form>
+			
+			
+		  <div class="row">
 				<div class="col-lg"><a href="#about" id="Header">Holidays</a>
 					<a href="#">Hannakah</a>
 					<a href="#">Kawanza</a>
@@ -98,7 +109,7 @@
 			</div>
 			
 			<div class="row">
-				<div class="col-lg"><a href="#services" id="Header">Holiday Entertaining </a>
+				<div class="col-lg"><a href="#services" id="Header1">Holiday Entertaining </a>
 					<a href="#">Dinnerware</a>
 					<a href="#">Serverware</a>
 					<a href="#">Table Linen</a>
@@ -109,7 +120,7 @@
 			</div>
 			
 			<div class="row">
-				<div class="col-lg"><a href="#clients" id="Header">Holiday for Kids</a>
+				<div class="col-lg"><a href="#clients" id="Header2">Holiday for Kids</a>
 					<a href="#">Christmas Advent <br>Calendar</a>
 					<a href="#">Homemade Ornaments <br> Kits</a>
 					<a href="#">Ginger Bread House</a>
@@ -119,7 +130,7 @@
 			</div>
 			
 			<div class="row">
-				<div class="col-lg"><a href="#contact" id="Header">Holiday Cooking</a>
+				<div class="col-lg"><a href="#contact" id="Header3">Holiday Cooking</a>
 					<a href="#">Bakeware</a>
 					<a href="#">Pots &amp; Pans</a>
 					<a href="#">Blenders</a>
