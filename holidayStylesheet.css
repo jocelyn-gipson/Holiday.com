@@ -58,10 +58,10 @@ table {
 body{
 	width: 1315px;
 	height: 3070px;
-	margin: 0px;
+	margin: 0px 16px 0px 16px;
 	background-color: #F4F4F4;
 }
-/**************************************************************************HEADER*/
+/**************************************************************************HEADER***********************************************/
 nav p{
 	display: inline;	
 }
@@ -70,7 +70,31 @@ nav {
 	padding-top: 20px;
 	padding-right: 10px;
 }
+#logo {
+	position: relative;
+	left: 450px;
+}
+#logo img{
+	margin: 17px 10px 0px 10px;
+}
+#cartTally {
+    font-size: 25px;
+}
 
+.tally {
+	display: inline;
+}
+.tally p{
+	font-size: 24px;
+}
+#newDealsBanner {
+	width: 550px;
+	position: relative;
+	left: 383px;
+	margin: 8px 0px 5px 0px;
+	
+}
+/**************************************************************************LANDING JUMBOTRON***********************************************/
 .text-center {
 	display: block;
 }
@@ -78,28 +102,31 @@ nav {
     width: auto;
     margin: 0;
     padding: 0;
-    height: 600px;
+    height: 445px;
+}
+.carousel-inner {
+	margin: 0;
+	padding: 0;
 }
 #carouselBanner {
 	position: relative;
 }
+
 #carouselBanner center .row.text-center {
     position: absolute;
     left: 0;
     top: auto;
     width: 100%;
     text-align: center;
-    bottom: 650%;
+    bottom: 600%;
 }
 center .row.text-center .text-center {
     font-size: 70px;
     color: #740b08;
-	padding-bottom: 0px;
 }
 center .row.text-center h6 {
     font-size: 18px;
     color: #740b08;
-    margin-top: 20px;
 }
 .scroll {
 	height: 100px;
@@ -107,23 +134,29 @@ center .row.text-center h6 {
 	margin: 0px;
 	padding-top: 50px;
 }
-#carouselBanner center .row.text-center {
-}
 .scroll a img {
     position: relative;
-    left: 600px;
+    left: 500px;
     right: auto;
     top: 80px;
 }
-
+/************************************************************************LANDING NAVIGATION***************************************/
 
 #grayBar {
-	width: 1280px;
 }
-.col-md-12 {
+.col-1 {
+	margin-bottom: 20px;
+	
+}
+#navBar {
+	background-color: #b7b7b7;
+}
+
+.col-md-11 {
+	position: relative;
+	left: 30px;
 	display: inline;
-	width: auto;
-	height: 54px;
+	height: 45px;
 	background-color: #b7b7b7;
 	padding-top: 12px;
 	font-family: BaskOldFace;
@@ -145,7 +178,7 @@ center .row.text-center h6 {
     padding-left: 7px;
     padding-right: 7px;
 }
-/************************************************************************Gallery***************************************/
+/************************************************************************LANDING GALLERY***************************************/
 .card{
     box-sizing: border-box;
 }
@@ -190,43 +223,53 @@ center .row.text-center h6 {
 .row .col-lg-8.text-right p {
     font-size: 24px;
 }
-.row .col-lg-8.text-right .tally {
 
-}
 .col-lg-3.sidenav .example input {
     margin: 0px 0px 15px 0px;
 }
+.container-fluid {
+}
+header.container-fluid {
+    margin-bottom: 10px;
+}
+.container #navBar #grayBar .col-md-12 {
 
+}
+#navBar #grayBar .col-md-12 {
 
+}
+.container-fluid #product {
 
-
-
-
-
-
-
-
-
-
+}
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
     display: block;
-}#main #sidenav {
+}
+.col-lg-8 p .img-fluid {
+
+}
+#product .row .col-lg-8 .img-fluid {
+    left: 399px;
+}
+
+
+
+#main #sidenav {
     font-family: BaskOldFace;
     color: #606165;
     font-size: 16px;
     font-weight: 400;
 }
+#product .row {
 
-}
-
+}}
 #Header, #Header1,#Header2,#Header3{
     font-size: 29px;
 }
 
-/**************************************************Sidebar**********************************************/
+/**************************************************LANDING SIDEBAR**********************************************/
 /* The sidebar menu */
 .col-lg {
 	margin-bottom: 25px;
@@ -286,42 +329,60 @@ form.example::after {
   display: table;
 }
 
-/*************************************************Main********************************************/
+/*************************************************LANDING CONTENT********************************************/
 
 .column card{
 	padding: 0px 0px 0px 80px
 }
-/*************************************************Footer********************************************/
-
-
-
-
-
-
-
-
-
-
+/*************************************************LANDING FOOTER********************************************/
 
 footer .container{
 	display: inline;
 	
 }
 
-.carousel-inner {
-	margin: 0;
-	padding: 0;
+
+
+
+
+
+
+
+
+
+/*************************************************************PRODUCT PAGE*****************************************/
+.price {
+	margin-top: 20px;
+	font-size: 30px;
 }
 
-#cartTally {
-    font-size: 25px;
+
+.productName {
+	font-size: 35px;
+	margin: 15px;
 }
 
-div {
-	
+.fa-star-o {
+	margin-top: 15px;
 }
 
-.tally {
-	display: inline;
-	
+.description {
+	font-size: 18px;
+	line-height: normal;
+	word-spacing: 7px;
 }
+
+.btn-secondary {
+	font-size: 26px;
+	position: relative;
+	left: 115px;
+	top: 60px;
+}
+
+.specifications {
+	word-spacing: 7px;
+	line-height: 1.5;
+}
+
+
+
