@@ -58,10 +58,14 @@ table {
 body{
 	width: 1315px;
 	height: 3070px;
-	margin: 0px 16px 0px 16px;
-	background-color: #F4F4F4;
+	margin: 0px 20px 0px 20px;
+	padding: 0px 40px;
+	background-color: #f2f2f2;
+	background-attachment: fixed;
+	color: #606165;
+	font-weight: 400;
 }
-/**************************************************************************HEADER***********************************************/
+/**************************************************************************LANDING HEADER***********************************************/
 nav p{
 	display: inline;	
 }
@@ -71,27 +75,45 @@ nav {
 	padding-right: 10px;
 }
 #logo {
-	position: relative;
-	left: 450px;
+    position: relative;
+    left: 275px;
 }
 #logo img{
 	margin: 17px 10px 0px 10px;
 }
-#cartTally {
-    font-size: 25px;
-}
-
 .tally {
 	display: inline;
+	position: relative;
+	top: 47px;
+	left: 50px;
 }
 .tally p{
-	font-size: 24px;
+	font-size: 22px;
+	font-family: BaskOldFace;
+	color: #606165;
+	font-weight: 400;
 }
-#newDealsBanner {
-	width: 550px;
+.fa-sleigh {
+	margin: 19px 0px 0px 40px;
+}
+.fa-user{
+	margin: 36px 10px 0px 10px;
 	position: relative;
-	left: 383px;
-	margin: 8px 0px 5px 0px;
+	right: 45px;
+}
+#cartIcon {
+	float: right;
+	position: relative;
+	left: 59px;
+}
+
+
+#newDealsBanner {
+    width: 550px;
+    position: relative;
+    left: 240px;
+    margin: 8px 0px 5px 0px;
+    top: 7px;
 	
 }
 /**************************************************************************LANDING JUMBOTRON***********************************************/
@@ -113,26 +135,27 @@ nav {
 }
 
 #carouselBanner center .row.text-center {
-    position: absolute;
-    left: 0;
-    top: auto;
-    width: 100%;
-    text-align: center;
-    bottom: 600%;
+    position: relative;
+	bottom: 300px;
+	width: 100%;
 }
 center .row.text-center .text-center {
-    font-size: 70px;
-    color: #740b08;
+    font-size: 60px;
+    color: #f2e4bb;
+	font-family: BaskOldFace;
+	font-weight: 400;
 }
 center .row.text-center h6 {
-    font-size: 18px;
+    font-size: 14px;
     color: #740b08;
+	font-family: BaskOldFace;
+	font-weight: 400;
 }
 .scroll {
 	height: 100px;
 	width: 100px;
 	margin: 0px;
-	padding-top: 50px;
+	padding-top: 40px;
 }
 .scroll a img {
     position: relative;
@@ -141,34 +164,36 @@ center .row.text-center h6 {
     top: 80px;
 }
 /************************************************************************LANDING NAVIGATION***************************************/
-
-#grayBar {
-}
-.col-1 {
-	margin-bottom: 20px;
-	
-}
 #navBar {
-	background-color: #b7b7b7;
+	background-color: #FFFFFF;
+	padding: 10px;
 }
-
-.col-md-11 {
-	position: relative;
-	left: 30px;
-	display: inline;
+.col-md-12 {
+	background-color: #FFFFFF;
 	height: 45px;
-	background-color: #b7b7b7;
+	position: relative;
+	left: 68px;
+	padding: 0px;
+	display: inline;
+	font-weight: 545px;
+	word-spacing: 17px;
+
+
+}
+.col-md-11 {
 	padding-top: 12px;
 	font-family: BaskOldFace;
 	color: #08191c;
-	font-size: 22px;
-	font-weight: 400;
+	font-size: 20px;
 	transform: matrix(1.055,0,0,1.005,0,0);
+}
+.word-spacing {
+	word-spacing: 0px;
 }
 .navbarAd {
 	width: auto;
 	height: 31px;
-	background-color: #ab0906;
+	background-color: #740b08;
 	box-shadow: 0px 0px 3.96px 0.04px rgba(0, 0, 0, 0.4);
 }
 .navbarAd img{
@@ -181,6 +206,7 @@ center .row.text-center h6 {
 /************************************************************************LANDING GALLERY***************************************/
 .card{
     box-sizing: border-box;
+	height: 415px;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -208,54 +234,112 @@ center .row.text-center h6 {
     padding-bottom: 180px;
 }
 .col-lg-9 {
-	padding-top: 40px;
+	padding-top: 115px;
 	padding-left: 0px;
-}
-
-.jumbotron #car {
 }
 #main #sidenav .col-lg-3.sidenav {
     margin-right: 0px;
+	margin-left: 0px;
+	
 }
 #sidenav .col-lg-3.sidenav img {
     padding-left: inherit;
 }
 .row .col-lg-8.text-right p {
-    font-size: 24px;
-}
-
-.col-lg-3.sidenav .example input {
-    margin: 0px 0px 15px 0px;
-}
-.container-fluid {
+    font-size: 20px;
+	font-family: BaskOldFace;
+	color: #606165;
+	font-weight: 400;
 }
 header.container-fluid {
     margin-bottom: 10px;
 }
-.container #navBar #grayBar .col-md-12 {
+
+.sidenav .form-inline {
+    position: relative;
+    right: 30px;
+}
+
+
+.col-lg-3.sidenav .form-inline-lg .btn.btn-sm.btn-light {
+    position: relative;
+    left: 194px;
+    bottom: 41px;
+}
+
+.row .col-md-5 p {
 
 }
-#navBar #grayBar .col-md-12 {
+.row .col-sm-3 #quantity {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.col-lg-4 .row .quantity {
+    margin-top: 45px;
+    font-size: 22px;
+}
+.row .col-md-7 img {
+    margin: 20px 32px;
+}
+.col-md-5 .searchResults p {
+    margin: 15px 20px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+.col-md-12.text-center a {
+    color: #000000;
+    font-size: 25px;
+
 
 }
-.container-fluid #product {
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
     display: block;
 }
-.col-lg-8 p .img-fluid {
 
+
+
+
+.row .col-lg-7 .card.text-black-50 {
 }
-#product .row .col-lg-8 .img-fluid {
+#Reviews  {
+    height: 100px;
+}
+
+
+#product .row .col-lg-7 .img-fluid {
     left: 399px;
 }
-
-
-
 #main #sidenav {
     font-family: BaskOldFace;
     color: #606165;
@@ -264,14 +348,94 @@ header.container-fluid {
 }
 #product .row {
 
-}}
+}
+}
 #Header, #Header1,#Header2,#Header3{
-    font-size: 29px;
+    font-size: 24px;
+	font-family: BaskOldFace;
+	color: #606165;
+	font-weight: 400;
+}
+.row .col-md-5 h2 {
+    font-size: 20px;
+    margin: 15px 8px;
+    letter-spacing: 1px;
+		
+
 }
 
+
+
 /**************************************************LANDING SIDEBAR**********************************************/
-/* The sidebar menu */
+/**************************************************LANDING SIDEBAR SEARCH FIELD**********************************************/
+
+.col-lg-3.sidenav .form-inline-lg .form-control.mr-sm-2 {
+    -webkit-box-shadow: -2px 2px 7px 0 #9B9CA3;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+.btn-outline-grey {
+	width: 20%;
+	padding-left: 20px;
+}
+
+
+.form-control-lg{
+	box-shadow: 20 20 10 70 #9b9ca3;
+}
+.navbar-brand{
+	font-size: 50px;
+	margin: 20px 20px 0px 20px;
+}
+
+
+
+form .form-control-lg input[type=text] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid grey;
+  width: 80%;
+  background: #f1f1f1;
+	font-family: BaskOldFace;
+	font-weight: 400;
+}
+
+form {
+	padding: 0px;
+	position: relative;
+	right: 14px;
+}
+/* Style the submit button */
+form .button {
+	position: relative;
+	top: 1.3px;
+	right: 0px;
+	float: left;
+	width: 15%;
+	padding: 7px;
+	background: #acacac;
+	color: white;
+	font-size: 14px;
+	border: 1px solid grey;
+	border-left: none; /* Prevent double borders */
+	cursor: pointer;
+	font-family: BaskOldFace;
+	
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .col-lg {
+	position: relative;
+	right: 10px;
 	margin-bottom: 25px;
 	padding-left: 0px;
 }
@@ -287,46 +451,10 @@ header.container-fluid {
 .col-lg-3 a {
   padding: 8px 8px 6px 6px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
   color: #818181;
   display: block;
-}
-input{
-  	box-sizing: border-box;
-}
-
-/* Style the search field */
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-}
-
-/* Style the submit button */
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: #0b7dda;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
+	font-family: BaskOldFace;
 }
 
 /*************************************************LANDING CONTENT********************************************/
@@ -337,29 +465,91 @@ form.example::after {
 /*************************************************LANDING FOOTER********************************************/
 
 footer .container{
-	display: inline;
-	
+	display: inline;	
+}
+#footer .row p  {
+    font-size: 16px;
+
+}
+.row .col-lg-7 h1 {
+    margin: 50px 10px 15px 10px;
+    font-size: 16px;
+	font-family: BaskOldFace;
+	font-weight: 400;
+}
+.row .col-lg-7 .page-footer {
+    margin: 10px;
+    font-size: 14px;
+}
+.row .col-md-4 h1 {
+    margin-top: 150px;
+    margin-right: 0px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-family: BaskOldFace;
+}
+.row .col-md-4 .random {
+}
+
+.row .col-md-4 #footerLinks {
+    margin: 10px 0px 20px 15px;
+    font-size: 14px;
+    line-height: inherit;
+    font-family: BaskOldFace;
+    letter-spacing: 1px;
+}
+#socialIcons a p{
+	margin: 10px;
+    display: inline;
+}
+#socialIcons .social-buttons p {
+    margin-top: 75px;
+}
+#socialIcons .social-buttons {
+    margin: 30px;
+}
+.social-buttons {
+    margin: 10;
+}
+.custService {
+	margin: 32px 0;
+	padding: 0;
+	text-align: center;
+}
+
+/*************************************************************PRODUCT PAGE*****************************************/
+#product .row {
+    height: 800px;
+}
+.productThumb {
+	position: relative;
+	top: 145px;
+	left: 10px;
+	width: 60px;
+}
+.row .col-lg-7 .card.w-75.text-black-50 {
+    margin: 50px;
+}
+
+#product img{
+	margin-bottom: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 
-
-
-
-
-
-
-
-
-/*************************************************************PRODUCT PAGE*****************************************/
+/**********************************************PRODUCT PAGE SIDEBAR*****************************************/
 .price {
 	margin-top: 20px;
 	font-size: 30px;
 }
-
-
 .productName {
-	font-size: 35px;
+	font-size: 30px;
 	margin: 15px;
+	position: relative;
+	left: 30px;
+	font-family: BaskOldFace;
+	color: #606165;
 }
 
 .fa-star-o {
@@ -371,18 +561,75 @@ footer .container{
 	line-height: normal;
 	word-spacing: 7px;
 }
-
-.btn-secondary {
-	font-size: 26px;
-	position: relative;
-	left: 115px;
-	top: 60px;
-}
-
 .specifications {
 	word-spacing: 7px;
 	line-height: 1.5;
 }
+/*CHECK OUT*/
+.btn-secondary {
+    font-size: 20px;
+    position: relative;
+    font-family: BaskOldFace;
+    margin-top: 22px;
+}
+.col-lg-4 #chkQty {
+    float: right;
+}
+/*************************************************************PRODUCT PAGE*****************************************/
+/*************************************************************PRODUCT PAGE FOOTER*****************************************/
 
 
+/**********************************************************************PRODUCT LOCATION***********************************************/
+div #searchResults{
+    display: block;
+}
+.searchResults {
+	display: block;
+}
+.col-sm {
+	height: 60px;
+}
 
+#navigationBar {
+	background-color: ffffff;
+}
+#body {
+	background-color:#ffffff; 
+}
+
+#navDiv {
+	position: relative;
+	top: 12px;
+}
+
+#product {
+	background-color: #ffffff;
+}
+
+.shipHere {
+	margin: 8px;
+}
+.card-header {
+	text-align: left;
+	font-size: 16px;
+}
+.caption {
+	margin-top: 20px;
+	font-family: BaskOldFace;
+	color: #050607;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.listPrice {
+	padding-top: 10px;
+	text-decoration: line-through;
+	
+}
+
+.markDown {
+	font-family: BaskOldFace;
+	color: #ab0906;
+	font-size: 16px;
+	font-weight: 400;
+}
