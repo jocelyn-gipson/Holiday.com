@@ -52,7 +52,6 @@ table {
 body{
     width: 1300px;
     margin: 0px 15px 0px 25px;
-    padding: 0px 0px;
     background-color: #f2f2f2;
     background-attachment: fixed;
     color: #606165;
@@ -95,7 +94,6 @@ nav p{
 nav {
     height: 40px;
     width: 1300px;
-    left: auto;
 	
 }
 .navbar.text-center {
@@ -112,7 +110,9 @@ nav {
 
 #logo {
     position: relative;
-    left: 275px;
+    left: 270px;
+    bottom: 0px;
+    top: 4px;
 }
 #logo img{
     margin-bottom: 0px;
@@ -179,21 +179,28 @@ span.psw {
 #navDiv #navbarSupportedContent1 .px-4.py-3 {
     width: 300px;
 }
+#navigationBar {
+	background-color: ffffff;
+}
+#body {
+	background-color:#ffffff; 
+}
+
+#navDiv {
+    position: relative;
+    height: 50px;
+}
+
 #newDealsBanner {
     width: 500px;
     position: relative;
     left: 285px;
-    margin-top: 2px;
     margin-right: 0px;
     margin-left: 0px;
-    top: 7px;
     height: 40;
+    top: 5px;
+    bottom: auto;
 	
-}
-
-
-.word-spacing {
-    word-spacing: 0px;
 }
 .breadcrumb{
     background-color: white;
@@ -313,18 +320,6 @@ ul.breadcrumb li a:hover {
 	height: 60px;
 }
 
-#navigationBar {
-	background-color: ffffff;
-}
-#body {
-	background-color:#ffffff; 
-}
-
-#navDiv {
-    position: relative;
-    top: auto;
-    height: 50px;
-}
 
 #product {
 	background-color: #ffffff;
@@ -406,20 +401,15 @@ width: 900px;
     top: 90px;
     right: 85px;
 }
-
-.text-center {
-	
-}
 #navBar .col-md-12.text-center {
-    background-color: #606165;
     background-color: #FFFFFF;
     height: 30px;
     position: relative;
     display: inline;
     font-weight: 545px;
-    word-spacing: 28px;
+    word-spacing: 20px;
     color: #FFFFFF;
-    font-size: 20px;
+    font-size: 28px;
     width: auto;
 }
 
@@ -455,6 +445,76 @@ width: 900px;
     box-shadow: 0 0 8px 0px rgba(0,0,0,0.3);
     border-radius: 5px;
 }
+.searchResults .resultButtons .btn.btn {
+    position: relative;
+    left: 385px;
+}
+
+.card-body a img {
+    position: relative;
+    left: 70px;
+}
+
+.col-md-8 .card.topCard .card-header {
+    color: #606165;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+.col-md-8 .card.topCard .card-body {
+    background-color: #FFFFFF;
+    color: #606165;
+
+}
+/*************************************************REVIEWS********************************************/
+.reviews {
+    margin-bottom: 30px;
+    border-top-style:groove ;
+	border-bottom-style:groove;
+    font-size: 25px;
+}
+.col-md-8 .card.reviewsDiv .card-header {
+    color: #606165;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+#reviews #Reviews .col-md-8 {
+    position: relative;
+    left: 20px;
+}
+
+#Reviews .col-md-8 .card.reviewsDiv {
+    margin: 45px 0px;
+}
+.col-md-8 .card.reviewsDiv .card-body {
+    background-color: #FFFFFF;
+    color: #606165;
+}
+/*************************************************RECOMMENDED********************************************/
+
+.card-header.recommended {
+    border-top-style: groove;
+    border-top-width: thin;
+}
+/*************************************************PRODUCT LOCATION********************************************/
+
+#productLocation {
+	margin: 50px 0;
+}
+#product #productLocation .card-header.productLocation {
+    background-color: #407e6f;
+    margin: 10px 0px 5px 0px;
+    color: #f1f5f6;
+    font-size: 22px;
+}
+
+.img-fluid {
+	margin-bottom: 12px;
+    box-shadow: 0 0 1px 2px rgba(0,0,0,0.10);
+}
+#product #productLocation .row {
+    height: 490px;
+    margin-bottom: 40px;
+}
 .card-body .searchResults h2 {
     font-size: 22px;
     line-height: 1.3px;
@@ -487,70 +547,6 @@ width: 900px;
     margin-bottom: 20px;
 
 }
-#product #productLocation .row {
-    height: 490px;
-    margin-bottom: 40px;
-}
-
-
-.searchResults .resultButtons .btn.btn {
-    position: relative;
-    left: 385px;
-}
-#reviews #Reviews .col-md-8 {
-    position: relative;
-    left: 20px;
-}
-
-#Reviews .col-md-8 .card.reviewsDiv {
-    margin: 45px 0px;
-}
-.card-body a img {
-    position: relative;
-    left: 70px;
-}
-.col-md-8 .card.reviewsDiv .card-body {
-    background-color: #FFFFFF;
-    color: #606165;
-}
-.col-md-8 .card.topCard .card-header {
-    color: #606165;
-    font-size: 18px;
-    background-color: #ffffff;
-}
-.col-md-8 .card.topCard .card-body {
-    background-color: #FFFFFF;
-    color: #606165;
-
-}
-.col-md-8 .card.reviewsDiv .card-header {
-    color: #606165;
-    font-size: 18px;
-    background-color: #ffffff;
-}
-#product #productLocation .card-header.productLocation {
-    background-color: #407e6f;
-    margin: 10px 0px 5px 0px;
-    color: #f1f5f6;
-    font-size: 22px;
-}
-
-.img-fluid {
-	margin-bottom: 12px;
-    box-shadow: 0 0 1px 2px rgba(0,0,0,0.10);
-}
-
-.reviews {
-    margin-bottom: 30px;
-    border-top-style:groove ;
-	border-bottom-style:groove;
-    font-size: 25px;
-}
-.card-header.recommended {
-    border-top-style: groove;
-    border-top-width: thin;
-}
-
 /*************************************************FOOTER********************************************/
 
 
@@ -640,8 +636,4 @@ footer .container{
 	position: relative;
 	left: 60px;
 	font: "Baskerville Old Face";
-}
-
-#productLocation {
-	margin: 50px 0;
 }

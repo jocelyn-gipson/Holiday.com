@@ -56,56 +56,76 @@ table {
 
 
 body{
-	width: 1300px;
-	height: 3070px;
-	margin: 0px 15px 0px 25px;
-	padding: 0px 0px;
-	background-color: #f2f2f2;
-	background-attachment: fixed;
-	color: #606165;
-	font-weight: 400;
+    width: 1300px;
+    margin: 0px 15px 0px 25px;
+    background-color: #f2f2f2;
+    background-attachment: fixed;
+    color: #606165;
+    font-weight: 400;
 }
 a:link {
-    color: #000000;
-    text-decoration: none;
+    color: #464646;
 }
 a:visited {
-    text-decoration: none;
 }
 a:hover {
-    text-decoration: none;
     color: #5E6974;
 }
 a:active {
     text-decoration: none;
+    color: #252525;
 }
-/**************************************************************************LANDING HEADER***********************************************/
 
-
-
-
-header.container-fluid {
-    margin-bottom: 10px;
-}
+/**************************************************************************PRODUCT HEADER******************************************/
 nav p{
 	display: inline;	
 }
-nav {
-	padding-top: 20px;
-	padding-right: 10px;
+.col-md-12{
+    list-style: none;
+    background-color: #08191c;
+    width: auto;
 }
+
+.col-md-12 a {
+    text-decoration: none;
+    color: #b7b7b7;
+}
+
+
+
+
+nav {
+    height: 40px;
+    width: 1270px;
+    word-spacing: 20px;
+	
+}
+.navbar{
+    border-bottom: thick groove #b7b7b7;
+    position: relative;
+    border-top: thick groove #b7b7b7;
+    line-height: 1.3;
+}
+
+.navbar a{
+    margin: 0px;
+    color: #606165;
+}
+
+
 #logo {
     position: relative;
-    left: 300px;
+    left: 265px;
+    bottom: 5px;
 }
 #logo img{
-	margin: 17px 10px 0px 10px;
+    margin-bottom: 0px;
 }
 .tally {
-	display: inline;
-	position: relative;
-	top: 47px;
-	left: 277px;
+    display: inline;
+    position: relative;
+    top: 47px;
+    left: 250px;
 }
 .tally p{
 	font-size: 22px;
@@ -114,19 +134,29 @@ nav {
 	font-weight: 400;
 }
 .fa-sleigh {
-	margin: 19px 5px 0px 40px;
-	position: relative;
-	left: 234px;
+    /* [disabled]margin-top: 19px; */
+    margin-right: 5px;
+    margin-left: 40px;
+    margin-bottom: 0px;
+    position: relative;
+    left: 234px;
+    top: 10px;
 }
 
 #cartIcon {
-	float: right;
-	position: relative;
-	left: 59px;
+    float: right;
+    position: relative;
+    left: 30px;
+    top: 28px;
 }
-/* Bordered form */
+.fa-user{
+    margin-right: 10px;
+    margin-left: 10px;
+    position: relative;
+    margin-top: 22px;
+    top: 5px;
+}
 form {
-  border: 3px solid #f1f1f1;
 }
 
 /* Full-width inputs */
@@ -156,27 +186,26 @@ span.psw {
     right: 90px;
     padding: 0px;
 }
-
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-  .cancelbtn {
-    width: 100%;
-  }
+#navDiv #navbarSupportedContent1 .px-4.py-3 {
+    width: 300px;
+}
+#newDealsBanner {
+    width: 500px;
+    position: relative;
+    left: 280px;
+    margin-right: 0px;
+    margin-left: 0px;
+    top: 5px;
+    height: 40;
+    margin-top: 0px;
+    margin-bottom: 3px;
+	
+}
+#sidenav .col-lg-9 .row {
 }
 
-#newDealsBanner {
-    width: 800px;
-    position: relative;
-    left: 240px;
-    margin: 10px 0px 10px 0px;
-    top: 7px;
-    height: 40;
-	
+.word-spacing {
+    word-spacing: 0px;
 }
 /**************************************************************************LANDING JUMBOTRON***********************************************/
 .text-center {
@@ -242,21 +271,34 @@ center .row.text-center h6 {
 	padding: 10px;
 }
 #navDiv #navbarSupportedContent1 .px-4.py-3 {
-    width: 300px;
+	width: 300px;
 }
 #userIcon {
 	position: relative;
 	left: 14px;
 }
-.col-md-12 {
+
+#navBar .col-md-12.text-center {
+    background-color: #FFFFFF;
+    height: 30px;
+    position: relative;
+    display: inline;
+    font-weight: 545px;
+    word-spacing: 28px;
+    color: #FFFFFF;
+    font-size: 20px;
+    width: auto;
+}
+.col-md-12 .text-center{
 	background-color: #FFFFFF;
-	height: 45px;
+	height: 30px;
 	position: relative;
 	left: 68px;
 	padding: 0px;
 	display: inline;
 	font-weight: 545px;
-	word-spacing: 17px;
+	word-spacing: 28px;
+	font-size: 20px;
 }
 .col-md-11 {
 	padding-top: 12px;
@@ -265,18 +307,15 @@ center .row.text-center h6 {
 	font-size: 20px;
 	transform: matrix(1.055,0,0,1.005,0,0);
 }
-.word-spacing {
-	word-spacing: 0px;
-}
 .navbarAd {
-	width: auto;
-	height: 31px;
-	background-color: #740b08;
-	box-shadow: 0px 0px 3.96px 0.04px rgba(0, 0, 0, 0.4);
+    width: auto;
+    height: 20px;
+    background-color: #740b08;
+    box-shadow: 0px 0px 3.96px 0.04px rgba(0, 0, 0, 0.4);
 }
 .navbarAd img{
     width: 1280px;
-    height: 28px;
+    height: 18px;
     padding-top: 3px;
     padding-left: 7px;
     padding-right: 7px;
@@ -285,13 +324,12 @@ center .row.text-center h6 {
 
 .card{
     box-sizing: border-box;
-	height: 415px;
+	height: 200px;
 }
 .card {
     box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     background-color: #f1f1f1;
-    height: 200px;
 }
 /* Float four columns side by side */
 .column {
@@ -313,8 +351,8 @@ center .row.text-center h6 {
     padding-bottom: 180px;
 }
 .col-lg-9 {
-	padding-top: 115px;
-	padding-left: 0px;
+    padding-top: 70px;
+    padding-left: 0px;
 }
 
 .row .col-lg-8.text-right p {
@@ -348,16 +386,23 @@ center .row.text-center h6 {
     color: #000000;
     font-size: 25px;
 }
+.column a .card.product {
+    width: 200px;
+    height: 200px;
+}
+.row.product .column.product {
+    margin: auto;
+    width: 220px;
+	height: 180px;
+
+}
+
+
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-}
 
-.row .col-lg-7 .card.text-black-50 {
-}
+
 #Reviews  {
     height: 100px;
 }
@@ -387,8 +432,6 @@ center .row.text-center h6 {
 /**************************************************LANDING SIDEBAR SEARCH FIELD**********************************************/
 .col-lg-3.sidenav .form-inline-lg .btn.btn-sm.btn-light {
     position: relative;
-    left: 210px;
-    bottom: 41px;
 }
 #main #sidenav .col-lg-3.sidenav {
     margin-right: 0px;
@@ -460,6 +503,7 @@ form.example::after {
 	right: 10px;
 	margin-bottom: 25px;
 	padding-left: 0px;
+	width: 200px;
 }
 .col-lg-3{
   width: 10px;
@@ -499,6 +543,10 @@ footer .container{
 	font-family: BaskOldFace;
 	font-weight: 400;
 }
+#navDiv a #logo {
+    position: relative;
+}
+
 .row .col-lg-7 .page-footer {
     margin: 10px;
     font-size: 14px;
@@ -512,6 +560,7 @@ footer .container{
     font-family: BaskOldFace;
 }
 
+
 .row .col-md-4 #footerLinks, #footerLinks2, #footerlinks3 {
     margin: 10px 0px 20px 15px;
     font-size: 14px;
@@ -519,6 +568,7 @@ footer .container{
     font-family: BaskOldFace;
     letter-spacing: 1px;
 }
+
 #footerLinks2{
 	margin: 10px 0px 60px 15px;
     font-size: 14px;
@@ -618,15 +668,20 @@ div #searchResults{
 }
 
 #navigationBar {
-	background-color: ffffff;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    background-color: ffffff;
 }
 #body {
 	background-color:#ffffff; 
 }
 
 #navDiv {
-	position: relative;
-	top: 12px;
+    position: relative;
+    top: 5px;
+    height: 50px;
 }
 
 #product {
@@ -662,11 +717,7 @@ div #searchResults{
 }
 
 .ad2 {
-width: 900px;
-	height: 400px;
-	position: relative;
-	left: 220px;
-	top: 25px;
+	
 }
 
 #userIcon {
@@ -686,4 +737,27 @@ width: 900px;
 
 .collapse {
 	
+}
+
+.card.mb-3.berry{
+    width: 700px;
+    height: 310px;
+}
+.mb-3{
+	width: 700px;
+    height: 360px;
+}
+
+#ad2 {
+	background-image: url("Images/redPlaid.jpeg");
+	height: 360px;
+}
+
+#beMerry {
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+
+#wine {
+	margin-bottom: 60px;
 }
