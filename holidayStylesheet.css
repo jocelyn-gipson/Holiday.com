@@ -32,9 +32,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -56,27 +54,87 @@ table {
 
 
 body{
-    width: 1300px;
-    margin: 0px 15px 0px 25px;
-    background-color: #f2f2f2;
-    background-attachment: fixed;
+	margin-right: auto;
+  	margin-left:  auto;
+  	max-width: 1366px;
     color: #606165;
     font-weight: 400;
+	line-height: 1;
+	background-color:#ffffff;
 }
 a:link {
     color: #464646;
 }
 a:visited {
+    color: #606165;
 }
 a:hover {
     color: #5E6974;
 }
 a:active {
     text-decoration: none;
-    color: #252525;
+    color: #5F3B3B;
 }
 
-/**************************************************************************PRODUCT HEADER******************************************/
+/**************************************************************************LANDING HEADER******************************************/
+/* Add a black background color to the top navigation */
+.topnav {
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  color: #000000;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+#navigationBar {
+    background-color: ffffff;
+    width: auto;
+    height: auto;
+}
+#userIcon {
+	position: relative;
+	left: 14px;
+}
+
+.collapse {
+    width: auto;
+	
+}
+#navbarSupportedContent1 {
+	max-width: 300px;
+}
+
+.userIcon {
+	padding: 5;
+	margin: 0;
+	position: relative;
+	top: 30px;
+	z-index: auto;
+}
+
+.dropdown-divider {
+	height: 80px;
+}
 nav p{
 	display: inline;	
 }
@@ -90,74 +148,62 @@ nav p{
     text-decoration: none;
     color: #b7b7b7;
 }
-
-
-
-
-nav {
+/*nav .navbar {
     height: 40px;
-    width: 1270px;
+    width: auto;
     word-spacing: 20px;
 	
 }
 .navbar{
     border-bottom: thick groove #b7b7b7;
-    position: relative;
     border-top: thick groove #b7b7b7;
     line-height: 1.3;
+    width: auto;
 }
 
 .navbar a{
     margin: 0px;
     color: #606165;
-}
+}*/
 
 
-#logo {
-    position: relative;
-    left: 265px;
-    bottom: 5px;
-}
+
 #logo img{
-    margin-bottom: 0px;
+	padding-top: 5px;
+    position: relative;
+    left: 85px;
+    top: 0px;
 }
 .tally {
     display: inline;
     position: relative;
-    top: 47px;
-    left: 250px;
+    top: 53px;
+    height: 22px;
+    left: 200px;
 }
 .tally p{
-	font-size: 22px;
-	font-family: BaskOldFace;
-	color: #606165;
-	font-weight: 400;
+    font-size: 22px;
+    font-family: BaskOldFace;
+    color: #606165;
+    font-weight: 400;
 }
 .fa-sleigh {
-    /* [disabled]margin-top: 19px; */
-    margin-right: 5px;
-    margin-left: 40px;
-    margin-bottom: 0px;
     position: relative;
-    left: 234px;
-    top: 10px;
+    top: 45px;
+    left: 190px;
 }
 
 #cartIcon {
-    float: right;
+    
+	margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
     position: relative;
-    left: 30px;
-    top: 28px;
+    left: 0px;
+    top: 0px;
+	color: #000000;
 }
-.fa-user{
-    margin-right: 10px;
-    margin-left: 10px;
-    position: relative;
-    margin-top: 22px;
-    top: 5px;
-}
-form {
-}
+
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
@@ -168,10 +214,6 @@ input[type=text], input[type=password] {
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
-/* Add padding to containers */
-.container {
-  padding: 16px;
-}
 
 /* The "Forgot password" text */
 span.psw {
@@ -179,12 +221,9 @@ span.psw {
   padding-top: 16px;
 }
 #navigationBar #navDiv .navbar-toggler{
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 5px;
-    position: relative;
-    right: 90px;
-    padding: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
 }
 #navDiv #navbarSupportedContent1 .px-4.py-3 {
     width: 300px;
@@ -192,69 +231,85 @@ span.psw {
 #newDealsBanner {
     width: 500px;
     position: relative;
-    left: 280px;
+    left: 300px;
     margin-right: 0px;
     margin-left: 0px;
-    top: 5px;
+    top: 2px;
     height: 40;
-    margin-top: 0px;
-    margin-bottom: 3px;
+    margin-top: 3px;
+    margin-bottom: 10px;
 	
 }
-#sidenav .col-lg-9 .row {
-}
+
 
 .word-spacing {
     word-spacing: 0px;
 }
-/**************************************************************************LANDING JUMBOTRON***********************************************/
-.text-center {
-	display: block;
-}
-.jumbotron {
-    width: auto;
-    margin: 0;
-    padding: 0;
-    height: 440px;
-}
-.carousel-inner {
-	margin: 0;
-	padding: 0;
-}
-#carouselBanner {
-	position: relative;
+
+/************************************************************************LANDING NAVIGATION***************************************/
+/* Add a black background color to the top navigation */
+.topnav {
+  position: relative;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 
-#carouselBanner center .row.text-center {
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
     position: relative;
-	bottom: 300px;
-	width: 100%;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
 }
-center .row.text-center .text-center {
-    font-size: 60px;
-    color: #f2e4bb;
-	font-family: BaskOldFace;
-	font-weight: 400;
-}
-center .row.text-center h6 {
-    font-size: 14px;
-    color: #740b08;
-	font-family: BaskOldFace;
-	font-weight: 400;
-}
-.scroll {
-	height: 100px;
-	width: 100px;
-	margin: 0px;
-	padding-top: 40px;
-}
-.scroll a img {
-    position: relative;
-    left: 500px;
-    right: auto;
-    top: 80px;
-}
-/************************************************************************LANDING NAVIGATION***************************************/
+
+
+
+
+
+
 .navbar-brand{
 	font-size: 50px;
 	margin: 20px 20px 0px 20px;
@@ -267,11 +322,10 @@ center .row.text-center h6 {
 }
 
 #navBar {
-	background-color: #FFFFFF;
-	padding: 10px;
+    background-color: #FFFFFF;
 }
 #navDiv #navbarSupportedContent1 .px-4.py-3 {
-	width: 300px;
+    width: 300px;
 }
 #userIcon {
 	position: relative;
@@ -320,25 +374,73 @@ center .row.text-center h6 {
     padding-left: 7px;
     padding-right: 7px;
 }
-/************************************************************************LANDING GALLERY***************************************/
-
-.card{
-    box-sizing: border-box;
-	height: 200px;
+/**************************************************************************LANDING JUMBOTRON***********************************************/
+.text-center {
+	display: block;
 }
-.card {
+.jumbotron {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    height: 440px;
+}
+.carousel-inner {
+	margin: 0;
+	padding: 0;
+}
+#carouselBanner {
+	position: relative;
+}
+
+
+center .row.text-center .text-center {
+    font-size: 60px;
+    color: #f2e4bb;
+	font-family: BaskOldFace;
+	font-weight: 400;
+}
+center .row.text-center h6 {
+    font-size: 14px;
+    color: #740b08;
+	font-family: BaskOldFace;
+	font-weight: 400;
+}
+.scroll {
+	height: 100px;
+	width: 100px;
+	margin: 0px;
+	padding-top: 40px;
+}
+.scroll a img {
+    position: relative;
+    left: 500px;
+    right: auto;
+    top: 80px;
+}
+/************************************************************************LANDING GALLERY***************************************/
+.card  {
     box-shadow: 0px 0px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     background-color: #f1f1f1;
+    box-sizing: border-box;
+    height: 200px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    width: 200px;
 }
 /* Float four columns side by side */
-.column {
-	width: 33%;
-	padding-right: 20px;
-	padding-left: 10px;
+.column.product {
+    width: 33%;
 }
-.row {
-	margin: 0 -5px;
+.row .product{
+    /* [disabled]max-width: 1120px; */
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 28px;
+	
+	
 }
 
 /* Clear floats after the columns */
@@ -347,31 +449,12 @@ center .row.text-center h6 {
   	display: table;
   	clear: both;
 }
-.row .col-lg-9 .row {
-    padding-bottom: 180px;
-}
-.col-lg-9 {
-    padding-top: 70px;
-    padding-left: 0px;
-}
 
 .row .col-lg-8.text-right p {
     font-size: 20px;
 	font-family: BaskOldFace;
 	color: #606165;
 	font-weight: 400;
-}
-
-.row .col-md-5 p {
-
-}
-.row .col-sm-3 #quantity {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.col-lg-4 .row .quantity {
-    margin-top: 45px;
-    font-size: 22px;
 }
 .row .col-md-7 img {
     margin: 20px 32px;
@@ -386,16 +469,19 @@ center .row.text-center h6 {
     color: #000000;
     font-size: 25px;
 }
-.column a .card.product {
-    width: 200px;
-    height: 200px;
-}
-.row.product .column.product {
-    margin: auto;
-    width: 220px;
-	height: 180px;
 
+#uno #beMerry #ads {
+    width: 105%;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -405,10 +491,6 @@ center .row.text-center h6 {
 
 #Reviews  {
     height: 100px;
-}
-
-#product .row .col-lg-7 .img-fluid {
-    left: 399px;
 }
 #main #sidenav {
     font-family: BaskOldFace;
@@ -431,15 +513,7 @@ center .row.text-center h6 {
 /**************************************************LANDING SIDEBAR**********************************************/
 /**************************************************LANDING SIDEBAR SEARCH FIELD**********************************************/
 .col-lg-3.sidenav .form-inline-lg .btn.btn-sm.btn-light {
-    position: relative;
-}
-#main #sidenav .col-lg-3.sidenav {
-    margin-right: 0px;
-	margin-left: 0px;
-	
-}
-#sidenav .col-lg-3.sidenav img {
-    padding-left: inherit;
+
 }
 .col-lg-3.sidenav .form-inline-lg .form-control.mr-sm-2 {
     -webkit-box-shadow: -2px 2px 7px 0 #9B9CA3;
@@ -469,6 +543,7 @@ form {
 	padding: 0px;
 	position: relative;
 	right: 15px;
+	z-index: auto;
 }
 /* Style the submit button */
 form .button {
@@ -499,34 +574,27 @@ form.example::after {
   display: table;
 }
 .col-lg {
-	position: relative;
-	right: 10px;
-	margin-bottom: 25px;
-	padding-left: 0px;
+	margin-top: 20px;
+	margin-bottom: 15px;
 	width: 200px;
+	padding-left: 0px;
 }
 .col-lg-3{
-  width: 10px;
+	width: 300px;
   position: relative;
   z-index: 1;
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-top: 40px;
+	margin-top: 40px;
 }
 .col-lg-3 a {
-  padding: 8px 8px 6px 6px;
-  text-decoration: none;
-  font-size: 14px;
-  color: #818181;
-  display: block;
-	font-family: BaskOldFace;
-}
-
-/*************************************************LANDING CONTENT********************************************/
-
-.column card{
-	padding: 0px 0px 0px 80px
+    padding: 8px 8px 6px 6px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    font-family: BaskOldFace;
 }
 /*************************************************LANDING FOOTER********************************************/
 
@@ -537,25 +605,20 @@ footer .container{
     font-size: 16px;
 
 }
-.row .col-lg-7 h1 {
-    margin: 50px 10px 15px 10px;
+.row .col-lg-8 h1 {
+    margin-top: 0px;
+    margin-right: 0px;
+    /* [disabled]margin-left: 10px; */
     font-size: 16px;
-	font-family: BaskOldFace;
-	font-weight: 400;
+    font-family: BaskOldFace;
+    font-weight: 400;
 }
-#navDiv a #logo {
-    position: relative;
+.card.wine .img-fluid  {
+    height: 350px;
+
 }
 
-.row .col-lg-7 .page-footer {
-    margin: 10px;
-    font-size: 14px;
-}
 .row .col-md-4 h1 {
-    margin-top: 60px;
-    margin-right: 0px;
-    margin-left: 15px;
-    margin-bottom: 15px;
     font-size: 22px;
     font-family: BaskOldFace;
 }
@@ -564,200 +627,216 @@ footer .container{
 .row .col-md-4 #footerLinks, #footerLinks2, #footerlinks3 {
     margin: 10px 0px 20px 15px;
     font-size: 14px;
-    line-height: inherit;
     font-family: BaskOldFace;
     letter-spacing: 1px;
+	line-height: 1.3;
 }
 
-#footerLinks2{
+#footerLinks3{
 	margin: 10px 0px 60px 15px;
     font-size: 14px;
-    line-height: inherit;
     font-family: BaskOldFace;
     letter-spacing: 1px;
+	line-height:1.3;
 }
 #socialIcons a p{
 	margin: 10px;
     display: inline;
 }
 #socialIcons .social-buttons p {
-    margin-top: 75px;
+    margin-top: 55px;
 }
 #socialIcons .social-buttons {
     margin: 50px;
 }
-.social-buttons {
-    margin: 10;
-}
-.custService {
-	margin: 32px 0;
-	padding: 0;
-	text-align: center;
-}
-
-/*************************************************************PRODUCT PAGE*****************************************/
-#product .row {
-    height: 800px;
-}
-.productThumb {
-	position: relative;
-	top: 145px;
-	left: 10px;
-	width: 60px;
-}
-.row .col-lg-7 .card.w-75.text-black-50 {
-    margin: 50px;
-}
-
-#product img{
-	margin-bottom: 12px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
 
 
-/**********************************************PRODUCT PAGE SIDEBAR*****************************************/
-.price {
-	margin-top: 20px;
-	font-size: 30px;
-}
-.productName {
-	font-size: 30px;
-	margin: 15px;
-	position: relative;
-	left: 30px;
-	font-family: BaskOldFace;
-	color: #606165;
-}
+/**********************************************LANDING PAGE ADVERTISEMENTS*****************************************/
 
-.fa-star-o {
-	margin-top: 15px;
-}
-
-.description {
-	font-size: 18px;
-	line-height: normal;
-	word-spacing: 7px;
-}
-.specifications {
-	word-spacing: 7px;
-	line-height: 1.5;
-}
-/*CHECK OUT*/
-.btn-secondary {
-    font-size: 20px;
-    position: relative;
-    font-family: BaskOldFace;
-    margin-top: 22px;
-}
-.col-lg-4 #chkQty {
-    float: right;
-}
-/*************************************************************PRODUCT PAGE*****************************************/
-/*************************************************************PRODUCT PAGE FOOTER*****************************************/
-
-
-/**********************************************************************PRODUCT LOCATION***********************************************/
-div #searchResults{
-    display: block;
-}
-.searchResults {
-	display: block;
-}
 .col-sm {
 	height: 60px;
 }
+.mb-3  {
 
-#navigationBar {
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-    background-color: ffffff;
 }
-#body {
-	background-color:#ffffff; 
+.card.berry {
+    height: auto;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    width: 500px;
+    margin-right: 0px;
 }
+.container .card.berry .img-fluid  {
+    height: 275px;
+    width: 500px;
 
-#navDiv {
-    position: relative;
-    top: 5px;
-    height: 50px;
-}
 
-#product {
-	background-color: #ffffff;
-}
-
-.shipHere {
-	margin: 8px;
-}
-.card-header {
-	text-align: left;
-	font-size: 16px;
-}
-.caption {
-	margin-top: 20px;
-	font-family: BaskOldFace;
-	color: #050607;
-	font-size: 16px;
-	font-weight: 400;
-}
-
-.listPrice {
-	padding-top: 10px;
-	text-decoration: line-through;
-	
-}
-
-.markDown {
-	font-family: BaskOldFace;
-	color: #ab0906;
-	font-size: 16px;
-	font-weight: 400;
-}
-
-.ad2 {
-	
-}
-
-#userIcon {
-	position: relative;
-	left: 14px;
 }
 
 
-
-
-
-
-
-.py-3 {
-	
-}
-
-.collapse {
-	
-}
-
-.card.mb-3.berry{
-    width: 700px;
-    height: 310px;
-}
-.mb-3{
-	width: 700px;
-    height: 360px;
-}
 
 #ad2 {
 	background-image: url("Images/redPlaid.jpeg");
-	height: 360px;
+	height: auto;
+}
+
+/*Product Card Caption*/
+.caption {
+	margin-bottom: 5px;
+	
+}
+
+.listPrice {
+	text-decoration: line-through;
+}
+
+.markDown {
+		color: #ED0A0E;
+}
+
+
+
+#main {
+	width: auto;
+}
+
+.sidenav {
+	position: relative;
+	left: 10px;
+}
+
+hr {
+	width: 160px;
+	position: relative;
+	right: 55px;
+}
+
+.footerHr {
+	width: auto;
+}
+
+.card.wine {
+    height: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    position: relative;
+    left: 180px;
+}
+
+#uno {
+    width: auto;
+    height: auto;
+    position: relative;
 }
 
 #beMerry {
-	margin-top: 90px;
-	margin-bottom: 90px;
+	width: 105%;
+	
 }
 
-#wine {
-	margin-bottom: 60px;
+/*************************************************************************************TEST PAGE CODE*******************************************************************/
+/* Main content of the site */
+#content {
+	clear: both;
+	overflow: auto;
+	padding-top: 29px;
+}
+/* Sidebar */
+#content .sidebar {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	float: left;
+	width: 20%;
+	padding-left: 3%;
+	padding-right: 3%;
+	text-align: center;
+	background-color: rgba(246,246,246,1.00);
+	padding-top: 36px;
+	height: 784px;
+}
+/* main content of the site */
+#content .mainContent {
+	float: left;
+	width: 70%;
+	text-align: center;
+	padding-left: 4%;
+}
+/*menubar's properties for menus in sidebar */
+#content .sidebar #menubar {
+	text-align: left;
+	color: rgba(146,146,146,1.00);
+	position: relative;
+	left: 0%;
+}
+/* Search field in sidebar */
+#content .sidebar #search {
+	width: 100%;
+	border-radius: 0px;
+	height: 42px;
+	text-align: center;
+	color: rgba(208,207,207,1.00);
+	font-size: 14px;
+	;
+	margin-bottom: 21px;
+}
+/* Whole page content */
+#mainWrapper {
+	width: 80%;
+	padding-left: 10%;
+}
+/*menu elements */
+.menu ul li {
+	list-style-type: none;
+	font-size: x-large;
+	position: relative;
+	left: -35px;
+	padding-top: 12px;
+}
+/* Product rows for catalog */
+#content .mainContent .productRow {
+	overflow: auto;
+	color: rgba(146,146,146,1.00);
+}
+/* Each product Information in the catalog */
+.mainContent .productRow .productInfo {
+	float: left;
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 22%;
+}
+/* Prices of a products in catalog */
+.productRow .productInfo .price {
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 22px;
+	position: relative;
+	top: -20px;
+}
+/* Content holder for products in catalog*/
+.productRow .productInfo .productContent {
+	position: relative;
+	top: -37px;
+	font-size: 14px;
+	font-family: source-sans-pro, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	color: rgba(146,146,146,1.00);
+	white-space: pre-wrap;
+}
+/* Buy button for products in catalog */
+.productRow .productInfo .buyButton {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	background-color: rgba(208,207,207,1.00);
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
 }
